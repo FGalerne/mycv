@@ -22,7 +22,7 @@ class CvController extends Controller
 
         $cvs = $em->getRepository('CvBundle:Cv')->findAll();
 
-        return $this->render('cv/index.html.twig', array(
+        return $this->render('CvBundle:cv:index.html.twig', array(
             'cvs' => $cvs,
         ));
     }
@@ -45,7 +45,7 @@ class CvController extends Controller
             return $this->redirectToRoute('cv_show', array('id' => $cv->getId()));
         }
 
-        return $this->render('cv/new.html.twig', array(
+        return $this->render('CvBundle:cv:new.html.twig', array(
             'cv' => $cv,
             'form' => $form->createView(),
         ));
@@ -59,7 +59,7 @@ class CvController extends Controller
     {
         $deleteForm = $this->createDeleteForm($cv);
 
-        return $this->render('cv/show.html.twig', array(
+        return $this->render('CvBundle:cv:show.html.twig', array(
             'cv' => $cv,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -81,7 +81,7 @@ class CvController extends Controller
             return $this->redirectToRoute('cv_edit', array('id' => $cv->getId()));
         }
 
-        return $this->render('cv/edit.html.twig', array(
+        return $this->render('CvBundle:cv:edit.html.twig', array(
             'cv' => $cv,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
