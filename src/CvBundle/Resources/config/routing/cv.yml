@@ -1,0 +1,24 @@
+cv_index:
+    path:     /
+    defaults: { _controller: "CvBundle:Cv:index" }
+    methods:  GET
+
+cv_show:
+    path:     /{id}/show
+    defaults: { _controller: "CvBundle:Cv:show" }
+    methods:  GET
+
+cv_new:
+    path:     /new
+    defaults: { _controller: "CvBundle:Cv:new" }
+    methods:  [GET, POST]
+
+cv_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CvBundle:Cv:edit" }
+    methods:  [GET, POST]
+
+cv_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CvBundle:Cv:delete" }
+    methods:  DELETE

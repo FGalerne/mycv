@@ -1,0 +1,44 @@
+CvBundle\Entity\Cv:
+    type: entity
+    table: null
+    repositoryClass: CvBundle\Repository\CvRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        resume:
+            type: string
+            length: 255
+        formation:
+            type: string
+            length: 255
+        education:
+            type: string
+            length: 255
+        experiences:
+            type: string
+            length: 255
+        telephone:
+            type: integer
+        address:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        firstname:
+            type: string
+            length: 255
+        lastname:
+            type: string
+            length: 255
+        project:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
