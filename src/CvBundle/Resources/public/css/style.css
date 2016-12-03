@@ -1,0 +1,27 @@
+h1, h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.container-fluid, .thumbnail{
+    background : url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_wall.png);
+    color: white;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+ p, .caption h4 {
+    padding:10px 25px 10px 25px;
+    color :white;
+}
+
+p{
+    text-align: justify;
+}

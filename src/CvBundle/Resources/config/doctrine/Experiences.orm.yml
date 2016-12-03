@@ -1,0 +1,26 @@
+CvBundle\Entity\Experiences:
+    type: entity
+    table: null
+    repositoryClass: CvBundle\Repository\ExperiencesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        society:
+            type: string
+            length: 255
+        dateStart:
+            type: string
+            length: 255
+            column: date_start
+        dateFinish:
+            type: string
+            length: 255
+            column: date_finish
+        description:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

@@ -1,0 +1,27 @@
+CvBundle\Entity\Projet:
+    type: entity
+    table: null
+    repositoryClass: CvBundle\Repository\ProjetRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '100'
+        language:
+            type: string
+            length: '100'
+        description:
+            type: string
+            length: 255
+        functionality:
+            type: string
+            length: 255
+        link:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
